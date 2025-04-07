@@ -1,8 +1,3 @@
-Com certeza! Aqui está o `README.md` completo e organizado, **juntando os dois conteúdos**: começamos com os conceitos básicos e propriedades como `grid-template-columns`, `grid-template-rows`, `gap`, etc., e depois evoluímos para o uso de **áreas nomeadas com `grid-template-areas`**, mantendo o tom leve, com emojis, explicações, exemplos comentados e uma tabela resumida de propriedades.
-
----
-
-```markdown
 # 🌐 Aprendendo CSS Grid com Estilo!
 
 O `display: grid` é uma ferramenta **poderosa e moderna** do CSS para criar **layouts com colunas e linhas**, como se fosse uma planta baixa de um site 🏗️. Ideal para organizar a página em partes como cabeçalho, menu, conteúdo e rodapé com muita clareza!
@@ -202,6 +197,3 @@ Use `grid-template-areas` e combine com as outras propriedades do Grid!
 👨‍🏫 *Material preparado para aula de Desenvolvimento Web – CSS Grid na prática!*
 ```
 
----
-
-Se quiser, posso montar esse exemplo como um projeto HTML+CSS completo pra seus alunos testarem localmente ou em um CodePen. Só avisar!
