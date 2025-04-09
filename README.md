@@ -190,19 +190,27 @@ footer { grid-area: footer; background: #bbb; }
 
 ## 🧮 Tabela de propriedades úteis do CSS Grid
 
-| Propriedade              | O que faz                                                                 |
-|--------------------------|--------------------------------------------------------------------------|
-| `display: grid`          | Ativa o grid layout                                                      |
-| `grid-template-columns`  | Define as colunas (quantidade e tamanho)                                 |
-| `grid-template-rows`     | Define as linhas (quantidade e tamanho)                                  |
-| `grid-template-areas`    | Cria nomes para partes do layout                                         |
-| `grid-area`              | Diz onde cada elemento se encaixa no layout nomeado                      |
-| `grid-column`            | Define a posição horizontal do item (de qual coluna até qual coluna)     |
-| `grid-row`               | Define a posição vertical do item                                        |
-| `gap`                    | Espaçamento entre colunas e linhas                                       |
-| `justify-items`          | Alinha horizontalmente os conteúdos de cada célula                       |
-| `align-items`            | Alinha verticalmente os conteúdos de cada célula                         |
-| `place-items`            | Atalho para `align-items` + `justify-items`                              |
+Claro! Aqui está uma **tabela com exemplos práticos das propriedades mais úteis do CSS Grid**, para facilitar o entendimento:
+
+| **Propriedade**        | **Descrição**                                                    | **Exemplo**                                       |
+|------------------------|------------------------------------------------------------------|---------------------------------------------------|
+| `display: grid`        | Define um container como Grid                                   | `display: grid;`                                  |
+| `grid-template-columns`| Define as colunas do grid                                        | `grid-template-columns: 1fr 2fr;`                 |
+| `grid-template-rows`   | Define as linhas do grid                                         | `grid-template-rows: 100px auto;`                |
+| `grid-column-gap`      | Espaço entre colunas                                             | `grid-column-gap: 20px;`                          |
+| `grid-row-gap`         | Espaço entre linhas                                              | `grid-row-gap: 10px;`                             |
+| `gap`                  | Atalho para `row-gap` e `column-gap`                            | `gap: 10px 20px;`                                 |
+| `grid-template-areas`  | Define áreas nomeadas no layout                                  | `grid-template-areas: "header header" "main sidebar";` |
+| `grid-area`            | Atribui um item a uma área nomeada                              | `grid-area: header;`                              |
+| `grid-column`          | Define início/fim da coluna para um item                        | `grid-column: 1 / 3;`                             |
+| `grid-row`             | Define início/fim da linha para um item                         | `grid-row: 2 / 4;`                                |
+| `justify-items`        | Alinhamento horizontal dos itens dentro das células             | `justify-items: center;`                          |
+| `align-items`          | Alinhamento vertical dos itens dentro das células               | `align-items: stretch;`                           |
+| `justify-content`      | Alinha o grid dentro do container na horizontal                 | `justify-content: space-between;`                 |
+| `align-content`        | Alinha o grid dentro do container na vertical                   | `align-content: center;`                          |
+| `repeat()`             | Função para repetir colunas ou linhas                           | `grid-template-columns: repeat(3, 1fr);`          |
+| `minmax()`             | Define valor mínimo e máximo para colunas/linhas                | `grid-template-columns: minmax(100px, 1fr);`      |
+| `auto-fit / auto-fill` | Ajusta o número de colunas automaticamente                      | `grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));` |
 
 ---
 
@@ -215,15 +223,6 @@ footer { grid-area: footer; background: #bbb; }
 
 ---
 
-## 🧪 Desafio para praticar
-
-Monte um layout com:
-
-- Cabeçalho
-- Menu lateral
-- Conteúdo principal
-- Propaganda (aside)
-- Rodapé
 
 Use `grid-template-areas`, `grid-column`, `grid-row` e `gap`. Tente também aplicar responsividade com media queries! 🚀
 
