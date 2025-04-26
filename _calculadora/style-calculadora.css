@@ -1,0 +1,69 @@
+body {
+    background-color: rgb(158, 158, 158);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .calculadora {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+    width: 50%;
+    min-width: 300px;
+    max-width: 400px;
+    height: 600px;
+    padding: 2rem;
+    gap: 2.2rem;
+    background-color: rgb(42, 42, 42);
+    border-radius: 9px;
+    box-shadow: 0 0 16px black;
+  }
+  
+  .display {
+    border: 5px double black;
+    background-color: aliceblue;
+    display: flex;
+    font-size: 4rem;
+    justify-content: end;
+    align-items: flex-end;
+    border-radius: 5px;
+  }
+  
+  .teclado {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    border-radius: 5px;
+    gap: 15px;
+  
+  
+  }
+  
+  .tecla {
+    clip-path: circle();
+    background-color: greenyellow;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s linear;
+  }
+  
+  .tecla:hover {
+    background-color: rgba(168, 255, 47, 0.789);
+  }
+  
+  .tecla:nth-child(16) {
+    grid-column: 4/5;
+    grid-row: 4/6;
+    clip-path: stroke-box;
+    border-radius: 40%;
+    width: 80px;
+    justify-self: center;
+    
+  }
+  

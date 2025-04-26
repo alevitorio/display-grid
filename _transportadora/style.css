@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f7;
+    color: #333;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "sidebar main"
+      "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 60px 1fr 40px;
+    height: 100vh;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .header {
+    grid-area: header;
+    background-color: #003366;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    gap: 10px;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    background-color: #e0e7ef;
+    padding: 20px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .sidebar li {
+    padding: 10px;
+    background-color: #cfd9e3;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .sidebar li:hover {
+    background-color: #aebed1;
+  }
+  
+  .main {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  .grid-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+  
+  .card {
+    padding: 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .card.green {
+    background-color: #28a745;
+  }
+  
+  .card.orange {
+    background-color: #fd7e14;
+  }
+  
+  .card.red {
+    background-color: #dc3545;
+  }
+  
+  .card.blue {
+    background-color: #007bff;
+  }
+  
+  .info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  }
+  
+  .info h2 {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .info ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: #003366;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    gap: 5px;
+  }
+  
+ 
